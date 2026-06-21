@@ -9,3 +9,11 @@ const text1 =  "Alura";
 const text2 = "alura";
 
 console.log(text1.toLowerCase() === text2)
+
+// null X undefined
+
+let input = null;
+let input2;
+
+console.log(input); // null
+console.log(input2); // undefined
