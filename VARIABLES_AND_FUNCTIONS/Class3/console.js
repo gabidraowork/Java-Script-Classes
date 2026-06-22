@@ -1,6 +1,6 @@
 // log => registro
 console.clear();
-const myVar = true;
+const myVar = true;// cool now working here
 
 console.log(245);
 console.log("I'm a text!")
