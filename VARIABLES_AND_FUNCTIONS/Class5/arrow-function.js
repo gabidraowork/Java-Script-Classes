@@ -16,4 +16,6 @@ const sumSmallNumbers = (num1,num2) => {
     }
 }
 
+// HOISTING: Arrow function behaves in the same way as the expression function
+
 // greater
