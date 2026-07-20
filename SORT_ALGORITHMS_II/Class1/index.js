@@ -1,5 +1,6 @@
 const { edFolha , edGalho } = require("./arrays");
 
+
 function joinLists(list1 = [], list2 = []){
     let finalList = [];
     let i = 0;
@@ -15,16 +16,7 @@ function joinLists(list1 = [], list2 = []){
             j++;
         }
     }
-    while (i < list1.length){
-        finalList.push(list1[i]);
-        i++;
-    }
-    while (j < list2.length){
-        finalList.push(list2[j]);
-        j++
-    }
-
-    return finalList;
+    return finalList.concat(i < list1.length ? list1.slice(i): list2.slice(j))
 }
 
-console.log(joinLists(edGalho, edFolha))
+module.exports =  joinLists
